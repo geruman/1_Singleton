@@ -11,20 +11,25 @@ Singleton, es usado cuando tenemos una clase que debe tener 1 sola instancia (Y 
 
 ## SOLID
 
-* Single responsibility:
-	Depende de la implementación de la clase en realidad ya que las "razones para cambiar" están muy atadas a la función de la clase en sí mas que al patron singleton en si
+* Single responsibility
+
+Depende de la implementación de la clase en realidad ya que las "razones para cambiar" están muy atadas a la función de la clase en sí mas que al patron singleton en si
 
 * Open/Closed principle
-	Si la instanciación de la clase cambia tendremos que modificar el método getInstance indefectiblemente, por lo que sería mejor utilizar un factory para esto. Aunque a su vez el factory también tiene que cambiar cuando cambia el constructor por lo que seguiría rompiendo, a menos que utilicemos un framework tipo spring para mitigarlo.
+
+Si la instanciación de la clase cambia tendremos que modificar el método getInstance indefectiblemente, por lo que sería mejor utilizar un factory para esto. Aunque a su vez el factory también tiene que cambiar cuando cambia el constructor por lo que seguiría rompiendo, a menos que utilicemos un framework tipo spring para mitigarlo.
 
 * Liskov Substitution
-	No habría conflicto con este principio, cualquier clase derivada tendría que comportarse correctamente.
+
+No habría conflicto con este principio, cualquier clase derivada tendría que comportarse correctamente.
 
 * Interface Segregation
-	No hay restricciones para la implementación de este principio.
+	
+No hay restricciones para la implementación de este principio.
 
 * Dependency inversión.
-	Para que esté principio esté aplicado basta con recibir las dependencias por el método getInstance o utilizar un framework tipo Spring.
+	
+Para que esté principio esté aplicado basta con recibir las dependencias por el método getInstance o utilizar un framework tipo Spring.
 	
 	
 
